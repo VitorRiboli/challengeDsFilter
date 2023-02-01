@@ -4,7 +4,10 @@ export default function Header() {
 
   return (
     <header>
-      teste
+      <nav>
+        <h1>DSFilter</h1>
+        <span>6 produtos(s)</span>
+      </nav>
     </header>
   )
 }

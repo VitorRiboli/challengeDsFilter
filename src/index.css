@@ -1,3 +1,17 @@
 :root {
+  --color-bg: #010409;
   --color-bg-primary: #272b33;
+  --color-bg-secondary: #b6b5b5;
+  --color-bg-terciary: #fff;
+  --color-bg-quartiary: #c2c2c2;
+
+  --color-font-primary: #FFFFFF;
+  --color-font-secondary: #C2C2C2;
+  --color-font-terciary: #6F6F6F;
+  --color-font-quartiary: #55BC04;
+
+  --color-bg-btn: #272b33;
+  --color-bg-btn-hover: #525964;
+  --color-btn-border: ##7a828e;
+
 }

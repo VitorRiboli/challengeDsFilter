@@ -13,5 +13,14 @@
   --color-bg-btn: #272b33;
   --color-bg-btn-hover: #525964;
   --color-btn-border: ##7a828e;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--color-bg);
 }

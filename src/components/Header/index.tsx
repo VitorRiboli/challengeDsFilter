@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <h1>DSFilter</h1>
+        <h1>Filtro de Produtos</h1>
         <span>{contextProductCount} {contextProductCount > 1 ? "produtos" : "produto"}</span>
       </nav>
     </header>

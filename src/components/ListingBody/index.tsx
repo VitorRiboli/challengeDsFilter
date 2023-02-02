@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { ProductDTO } from "../../model/productDTO";
 
@@ -14,23 +14,20 @@ type QueryParams = {
 
 
 export default function ListingBody() {
-
+ 
   const [products, setProducts] = useState<ProductDTO[]>([]);
 
   const [queryParams, setQueryParams] = useState<QueryParams>({})
 
   useEffect(() => {
     setProducts(productService.findByPrice(queryParams.min || 0, queryParams.max || Number.MAX_VALUE));
-
-    console.log(products)
   }, [queryParams]);
 
 
   function handleFilter(min: number, max: number) {
     setProducts([]);
     setQueryParams({...queryParams, min: min, max: max})
-    console.log("teste", min, max)
-  }
+    }
 
 
   return (
